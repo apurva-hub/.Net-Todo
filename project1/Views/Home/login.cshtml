@@ -1,0 +1,26 @@
+﻿@{
+        Layout = null;
+    }
+
+
+<html>
+    <head>
+<link href="~/css/login_and_register.css" rel="stylesheet" />
+    </head>
+    <body>
+        
+        <form method="post">
+            <div class="form">
+                <h1>Login</h1>
+            <label class="form__label">Email</label>
+            <input class="form__input" required type="email" name="email" />
+            <label class="form__label">Password</label>
+            <input class="form__input" required  type="password" name="password" />
+            <input class="form__button" type="submit" value="Login" />
+            <br />
+            <p>Don't have an account? <a href="user_register">Sign Up</a></p>
+            </div>
+            </form>        
+@ViewData["Message"]
+    </body>
+</html>

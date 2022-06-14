@@ -1,0 +1,52 @@
+﻿@model IEnumerable<project1_lib.Task>
+<html>
+    <head>
+        <style>
+            body{
+                 font-family: "Handlee", cursive;
+            }
+                .input-task {
+                    border: none;
+                    border-bottom: 2px solid #b3b3b3;
+                    width: 20rem;
+                    font-size: large;
+                    font-family: "Handlee", cursive;
+                    color: black;
+                    margin:1rem;
+}
+            }
+
+            .addtask-button{
+              cursor: pointer;
+              border: none;
+              background-color: black;
+              color: white;
+              margin-left: 1rem;
+              width: 20rem;
+            }
+
+            .add-task-layout{
+                display:flex;
+                flex-direction : column;
+                align-content: center;
+                align-items: center;
+                margin-top: 6rem;
+            }
+        </style>
+
+    </head>
+    <body>
+        <form class="add-task-layout" method="post">
+            <h1>Create Task</h1>
+            <label>Task Name</label>
+            <input class ="input-task" required type="text" name ="taskName" />
+            <label>Task Description</label>
+            <input class ="input-task" required type="textarea" rows="4" cols="75" name ="taskDesc" />
+            <label>Task Due Date</label>
+            <input class ="input-task" required type="datetime" name ="taskDate" />
+            <input class ="addtask-button" type="submit" value="Add" />
+        </form>
+    </body>
+
+</html>
+

@@ -1,0 +1,32 @@
+﻿@{
+        Layout = null;
+    }
+    
+@model project1_lib.Register
+
+<html>
+    <head>
+        <link href="~/css/login_and_register.css" rel="stylesheet" />
+    </head>
+<body>
+    <form method="post">
+        <div class="form">
+    <h1>Sign Up</h1>
+    <label class="form__label">Enter First Name</label>
+    <input required class="form__input" type = "text" asp-for = "FirstName" />
+    <label class="form__label">Enter Last Name</label>
+    <input required class="form__input" type = "text" asp-for = "LastName" />
+    <label class="form__label">Enter Email</label>
+    <input required class="form__input" type = "email" asp-for = "EmailId" />
+    <label class="form__label">Enter Password</label>
+    <input required class="form__input" type = "password" asp-for = "Password" />
+    <input class="form__button" type = "submit" value = "submit"/>
+    <br />
+    <p>Already have an account? <a href="login">Login</a></p>
+    </div>
+</form>
+
+@ViewData["Message"]
+</body>
+</html>
+

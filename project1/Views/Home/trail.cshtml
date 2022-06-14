@@ -1,0 +1,74 @@
+﻿<html>
+    <head>
+        <link href="~/css/home.css" rel="stylesheet" />
+    </head>
+    <style>
+           body{
+                 font-family: "Handlee", cursive;
+            }
+               
+            .task-title{
+                font-size: 2.7rem;
+            }
+
+        .task-page{
+            display: flex;
+            flex-direction:column;
+            align-items:center;  
+        }
+
+        .task-titles{
+    
+            font-size: 1.8rem;
+           
+        }
+
+        .link-page{
+            color: black;
+            border:2px solid black;
+            padding: 0.5rem;
+             
+        }
+
+        .tasks{
+            margin-top: 1rem;
+        }
+
+        .done-button{
+                        color: black;
+            border:1px solid black;
+            padding: 0.4rem;
+            border-radius: 2rem;
+            
+        }
+        
+    </style>
+    <body>
+        <div class="task-page">
+        <h1 class = "task-title">@ViewData["title"]</h1>
+        
+        <a class="link-page" href="add_tasks">Add Task</a>
+       @if(ViewBag.displayTasks != null)
+        {
+       @foreach(var item in ViewBag.displayTasks)
+
+       {
+                <div class="tasks">
+                    @if (@item.TaskStatus == null)
+                    {
+                        <small class="task-titles" >@item.TaskName</small>
+                        <a class="done-button" asp-action="status_change" asp-route-id=@item.TaskId>done</a>
+                    }
+                    else
+                    { 
+                        
+                        <small class="task-titles" ><strike>@item.TaskName</strike></small>
+                    }
+         
+           </div>
+           
+       }
+        }
+       </div>
+    </body>
+</html>

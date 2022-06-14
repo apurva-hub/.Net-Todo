@@ -1,0 +1,88 @@
+﻿@model IEnumerable<project1_lib.Project>
+@using Microsoft.AspNetCore.Http
+
+<html>
+    <head>
+        <style>
+           #sidenav {
+    left: 0;
+    background-color: black;
+    width: 15%;
+   
+    /*height: 100%;*/
+    /*width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;*/
+}
+
+.sidenav__content {
+   padding: 6px 35px 6px 16px;
+   text-decoration: none;
+   font-size: 25px;
+   color: #818181;
+   display: block;
+}
+
+.sidenav__content:hover {
+   color: #f1f1f1;
+}
+
+.split {
+    height: 100%;
+    
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.content{
+    width: 85%;
+    right:0;
+    background-color: white;
+}
+
+.link{
+
+    border-top:2px dotted white;
+
+}
+
+.add-project{
+    
+
+    border-bottom:2px dotted white
+    
+    
+}
+
+
+        </style>
+
+        
+    </head>
+    <body>
+       <div id="sidenav" class="split">
+               <a  class="add-project sidenav__content" href="add_project">Add Project</a>
+       @if(Model != null)
+        {
+       @foreach(var item in Model)
+       {
+               <a asp-action="trail" asp-route-projectId=@item.ProjectId asp-route-projectName=@item.ProjectTitle class="sidenav__content">@item.ProjectTitle</a> 
+          
+       }
+       <a  class="link sidenav__content" href="logout">Logout</a>
+        }
+       </div>
+       <div class="split content">
+          @RenderBody()
+       </div>
+    </body>
+</html>
+
+
+

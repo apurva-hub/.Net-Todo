@@ -1,0 +1,47 @@
+﻿
+
+<html>
+    <head>
+        <style>
+                .input-project{
+                    border: none;
+                    border-bottom: 2px solid #b3b3b3;
+                    width: 20rem;
+                    font-size: large;
+                    font-family: "Handlee", cursive;
+                    color: black;
+                    margin:1rem;
+}
+            }
+
+            .addproject-button{
+              cursor: pointer;
+              border: none;
+              background-color: black;
+              color: white;
+              margin-left: 1rem;
+              width: 20rem;
+            }
+
+            .add-project-layout{
+                display:flex;
+                flex-direction : column;
+                align-content: center;
+                align-items: center;
+                margin-top: 6rem;
+            }
+        </style>
+
+    </head>
+    <body>
+        <form class="add-project-layout" method="post">
+            <h1>Create Project</h1>
+            <label>Project Title</label>
+            <input class="input-project" required type="text" name ="ProjectTitle" />
+            <label>Project Description</label>
+            <input  class="input-project" required type="textarea" rows="4" cols="75" name ="ProjectDesc" />
+            <input class="addproject-button" type="submit" value="submit" />
+        </form>
+        @ViewData["Message"]
+    </body>
+</html>

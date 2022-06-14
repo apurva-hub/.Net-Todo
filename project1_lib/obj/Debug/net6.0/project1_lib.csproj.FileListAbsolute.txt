@@ -1,0 +1,12 @@
+C:\Users\HP\Desktop\task_manager\project1\project1_lib\bin\Debug\net6.0\project1_lib.deps.json
+C:\Users\HP\Desktop\task_manager\project1\project1_lib\bin\Debug\net6.0\project1_lib.dll
+C:\Users\HP\Desktop\task_manager\project1\project1_lib\bin\Debug\net6.0\ref\project1_lib.dll
+C:\Users\HP\Desktop\task_manager\project1\project1_lib\bin\Debug\net6.0\project1_lib.pdb
+C:\Users\HP\Desktop\task_manager\project1\project1_lib\obj\Debug\net6.0\project1_lib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\task_manager\project1\project1_lib\obj\Debug\net6.0\project1_lib.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\task_manager\project1\project1_lib\obj\Debug\net6.0\project1_lib.AssemblyInfo.cs
+C:\Users\HP\Desktop\task_manager\project1\project1_lib\obj\Debug\net6.0\project1_lib.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\task_manager\project1\project1_lib\obj\Debug\net6.0\project1_lib.dll
+C:\Users\HP\Desktop\task_manager\project1\project1_lib\obj\Debug\net6.0\ref\project1_lib.dll
+C:\Users\HP\Desktop\task_manager\project1\project1_lib\obj\Debug\net6.0\project1_lib.pdb
+C:\Users\HP\Desktop\task_manager\project1\project1_lib\obj\Debug\net6.0\project1_lib.csproj.AssemblyReference.cache
